@@ -1,0 +1,57 @@
+@use '../modules/colors' as colors;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+
+// text-style template
+@mixin text-style($size, $lh, $color, $weight: normal) {
+  color: $color;
+  font-size: $size;
+  line-height: $lh;
+  font-weight: $weight;
+  margin-bottom: 15px;
+}
+
+// text style on desktop screen
+
+h1 {
+  @include text-style(46px, 60px, colors.$header-text, bolder);
+}
+
+h2 {
+  @include text-style(38px, 56px, colors.$header-text, bolder);
+}
+
+h3 {
+  @include text-style(30px, 40px, colors.$header-text, bolder);
+}
+
+p {
+  @include text-style(20px, 33px, colors.$body-text);
+}
+
+.p2 {
+  @include text-style(16px, 28px, colors.$body-text);
+}
+
+.p2-bolder {
+  @include text-style(16px, 28px, colors.$body-text, bold);
+}
+
+// text style on phone screen
+
+@media only screen and (max-width: 400px) {
+  h1 {
+    @include text-style(30px, 40px, colors.$header-text, bolder);
+  }
+
+  p {
+    @include text-style(14px, 24px, colors.$body-text);
+  }
+
+  .p2 {
+    @include text-style(12px, 24px, colors.$body-text);
+  }
+
+  .p2-bolder {
+    @include text-style(12px, 24px, colors.$body-text, bold);
+  }
+}

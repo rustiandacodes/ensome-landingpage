@@ -1,0 +1,112 @@
+@use '../modules/flexbox' as fb;
+@use '../modules/colors' as colors;
+
+// on desktop screen
+
+.navbar {
+  padding: 30px 0;
+  @include fb.flex-box(space-around);
+  ul {
+    @include fb.flex-box;
+    gap: 20%;
+    a {
+      color: colors.$body-text;
+    }
+    a:hover {
+      color: colors.$primary;
+      padding-bottom: 0.2em;
+      border-bottom: 2.5px solid colors.$primary;
+    }
+  }
+  button {
+    @include fb.flex-box;
+    gap: 10px;
+    i {
+      font-size: 20px;
+    }
+  }
+  .burger {
+    display: none;
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+      background-color: colors.$primary;
+    }
+  }
+}
+
+nav {
+  display: none;
+}
+
+// on tablet screen
+@media only screen and (max-width: 820px) {
+  .navbar {
+    position: absolute;
+    width: 100%;
+    ul {
+      display: none;
+    }
+    button {
+      display: none;
+    }
+    .burger {
+      display: block;
+    }
+  }
+
+  nav {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    background-color: colors.$primary;
+    transform: translateX(100%);
+    transition: all 1s;
+    .header {
+      @include fb.flex-box(space-between);
+      margin: 0 1.5rem;
+      margin-bottom: 1rem;
+    }
+    img {
+      width: 150px;
+    }
+    ul {
+      li {
+        border-bottom: 2px solid colors.$white;
+        padding: 1.5rem 1rem;
+        margin: 0 20px;
+        a {
+          font-size: 20px;
+          color: colors.$white;
+          font-weight: bold;
+          text-align: center;
+        }
+      }
+    }
+    .socmed {
+      margin-top: 30px;
+      @include fb.flex-box(space-between);
+      padding: 0 20px;
+      p {
+        margin: 20px 0;
+        color: colors.$white;
+        font-size: 20px;
+        font-weight: bolder;
+      }
+      img {
+        margin-left: 5px;
+        width: 40px;
+      }
+    }
+  }
+
+  .slide {
+    transform: translateX(0);
+  }
+}
+
+// one phone screen
+@media only screen and (max-width: 400px) {
+}

@@ -1,0 +1,6 @@
+// flex-box stle
+@mixin flex-box($justify: center) {
+  display: flex;
+  align-items: center;
+  justify-content: $justify;
+}
