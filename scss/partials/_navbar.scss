@@ -107,11 +107,26 @@ nav {
         border-bottom: 2px solid colors.$white;
         padding: 1.5rem 1rem;
         margin: 0 20px;
-        a {
+        a,
+        i {
           font-size: 20px;
           color: colors.$white;
           font-weight: bold;
-          text-align: center;
+        }
+        #pages:hover {
+          cursor: pointer;
+        }
+        .dropdown-responsive-btn {
+          @include fb.flex-box(space-between);
+          padding-bottom: 10px;
+        }
+        .dropdown-responsive-content {
+          li {
+            border: none;
+            i {
+              margin-left: 10px;
+            }
+          }
         }
       }
     }
