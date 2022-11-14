@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- style -->
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="scss/main.css" />
 
     <!-- hamburger animation -->
     <link rel="stylesheet" href="css/dist/hamburgers.css" />
@@ -23,8 +23,15 @@
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Solutions</a></li>
-        <li><a href="#">Pages</a></li>
-        <li><a href="#">Elemnts</a></li>
+        <li class="dropdown">
+          <a class="dropbtn" href="#">Pages<i class="fa-solid fa-chevron-down"></i></a>
+          <div class="dropdown-content">
+            <a href="#">Page 1 <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#">Page 2 <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#">Page 3 <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </li>
+        <li><a href="#">Elements</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Contact</a></li>
       </ul>

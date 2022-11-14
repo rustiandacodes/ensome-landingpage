@@ -9,29 +9,59 @@
   ul {
     @include fb.flex-box;
     gap: 20%;
-    a {
-      color: colors.$body-text;
+    li {
+      a {
+        color: colors.$body-text;
+      }
+      a:hover {
+        color: colors.$primary;
+        border-bottom: 2.5px solid colors.$primary;
+      }
     }
-    a:hover {
-      color: colors.$primary;
-      padding-bottom: 0.2em;
-      border-bottom: 2.5px solid colors.$primary;
+    .dropbtn {
+      @include fb.flex-box;
+      gap: 10px;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      min-width: 120px;
+      padding: 5px 0;
+      background-color: colors.$white;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      a {
+        display: block;
+        padding: 15px 20px;
+      }
+      i {
+        margin-left: 13px;
+      }
+      a:hover {
+        color: colors.$primary;
+        border: none;
+      }
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
     }
   }
-  button {
-    @include fb.flex-box;
-    gap: 10px;
-    i {
-      font-size: 20px;
-    }
+}
+
+button {
+  @include fb.flex-box;
+  gap: 10px;
+  i {
+    font-size: 20px;
   }
-  .burger {
-    display: none;
-    .hamburger-inner,
-    .hamburger-inner::before,
-    .hamburger-inner::after {
-      background-color: colors.$primary;
-    }
+}
+
+.burger {
+  display: none;
+  .hamburger-inner,
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    background-color: colors.$primary;
   }
 }
 
