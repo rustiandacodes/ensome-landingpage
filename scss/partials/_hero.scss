@@ -24,6 +24,11 @@
       .btn-primary {
         width: 100%;
       }
+
+      .btn-white {
+        border: 2px solid colors.$primary;
+        color: colors.$primary;
+      }
     }
     .hero-image {
       text-align: center;
@@ -39,7 +44,7 @@
     .hero-image {
       text-align: center;
       img {
-        width: 40vh;
+        width: 50vh;
       }
     }
   }
