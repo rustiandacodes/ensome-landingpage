@@ -24,6 +24,10 @@ h3 {
   @include text-style(30px, 40px, colors.$header-text, bolder);
 }
 
+h4 {
+  @include text-style(22px, 33px, colors.$header-text, bold);
+}
+
 p {
   @include text-style(20px, 33px, colors.$body-text);
 }
@@ -32,7 +36,7 @@ p {
   @include text-style(16px, 28px, colors.$body-text);
 }
 
-.p2-bolder {
+.p2-bold {
   @include text-style(16px, 28px, colors.$body-text, bold);
 }
 

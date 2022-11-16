@@ -1,0 +1,38 @@
+@use '../modules/flexbox' as fb;
+@use '../modules/colors' as colors;
+
+.advantages {
+  padding: 0 1.5rem;
+  text-align: center;
+  @include fb.flex-box;
+  flex-direction: column;
+  background-color: colors.$second-bg;
+  padding: 90px 0;
+  .advantage-title {
+    padding: 0 1.5rem;
+    padding-bottom: 30px;
+    @include fb.flex-box;
+    flex-direction: column;
+    margin-bottom: 20px;
+    h1 {
+      max-width: 400px;
+    }
+    p {
+      max-width: 500px;
+    }
+  }
+  .advantage-cards {
+    @include fb.flex-box;
+    gap: 2rem;
+    .card-container {
+      width: 300px;
+      height: 300px;
+      padding: 50px;
+      text-align: start;
+      background-color: colors.$white;
+      img {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
