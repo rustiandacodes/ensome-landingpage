@@ -21,17 +21,22 @@
       max-width: 500px;
     }
   }
-  .advantage-cards {
-    @include fb.flex-box;
-    gap: 2rem;
-    .card-container {
+}
+.slide-container {
+  text-align: start;
+  max-width: 1220px;
+  width: 100%;
+  height: 100%;
+  background-color: colors.$second-bg;
+  padding: 40px;
+  .slide-content {
+    margin: 0 40px;
+    .card {
       width: 300px;
-      height: 300px;
-      padding: 50px;
-      text-align: start;
       background-color: colors.$white;
+      padding: 50px;
       img {
-        margin-bottom: 20px;
+        margin-bottom: 25px;
       }
     }
   }

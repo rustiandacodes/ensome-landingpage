@@ -27,3 +27,39 @@ pages.addEventListener('click', () => {
     pagesContent.style.display = 'block';
   }
 });
+
+// swipper slider
+
+const swiper = new Swiper('.slide-content', {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  slidesPerGroup: 1,
+  loop: false,
+  centerSlide: 'true',
+  fade: 'true',
+  grapCursor: 'true',
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    530: {
+      slidesPerView: 1,
+    },
+    950: {
+      slidesPerView: 3,
+    },
+  },
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
+});

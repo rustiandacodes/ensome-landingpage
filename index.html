@@ -11,6 +11,9 @@
     <!-- hamburger animation -->
     <link rel="stylesheet" href="css/dist/hamburgers.css" />
 
+    <!-- swipper css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
     <!-- fontawesome icon -->
     <script src="https://kit.fontawesome.com/edbf68e292.js" crossorigin="anonymous"></script>
 
@@ -125,25 +128,31 @@
           <h1>Why our clients chose Ensome?</h1>
           <p>Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
         </div>
-        <div class="advantage-cards">
-          <div class="card-container">
-            <img src="assets/01_icon_brain_circuit.svg" alt="icon" />
-            <h4>Machine Learning</h4>
-            <p class="p2">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+        <div class="slide-container swiper">
+          <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                <img src="assets/01_icon_brain_circuit.svg" alt="" />
+                <h4>Machine Learning</h4>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+              </div>
+              <div class="card swiper-slide">
+                <img src="assets/02_icon_arrow_trending_linesadvan2.svg" alt="" />
+                <h4>Embed analytics</h4>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+              </div>
+              <div class="card swiper-slide">
+                <img src="assets/03_icon_key.svg" alt="" />
+                <h4>Access control</h4>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+              </div>
+            </div>
           </div>
-          <div class="card-container">
-            <img src="assets/02_icon_arrow_trending_linesadvan2.svg" alt="icon" />
-            <h4>Access control</h4>
-            <p class="p2">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
-          </div>
-          <div class="card-container">
-            <img src="assets/03_icon_key.svg" alt="icon" />
-            <h4>Machine Learning</h4>
-            <p class="p2">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
-          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </main>
   </body>
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/app.js"></script>
 </html>
