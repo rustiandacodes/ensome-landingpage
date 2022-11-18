@@ -1,8 +1,15 @@
+// <--- mixin modulels --->
 @use 'modules/reset';
 @use 'modules/text-style';
+
+// <--- component ui --->
 @use 'component/buttons';
+@use 'component/swiper';
+
+// <--- section --->
 @use 'partials/navbar';
 @use 'partials/hero';
 @use 'partials/client-logo';
 @use 'partials/advantages';
 @use 'partials/feature';
+@use 'partials/blog';

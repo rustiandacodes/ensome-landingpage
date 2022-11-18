@@ -1,0 +1,39 @@
+@use '../modules/flexbox' as fb;
+@use '../modules/colors' as colors;
+
+.blog {
+  padding: 0 1.5rem;
+  text-align: center;
+  @include fb.flex-box;
+  flex-direction: column;
+  background-color: colors.$third-bg;
+  padding: 70px 0;
+  .blog-title {
+    padding: 0 1.5rem;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+  }
+  button {
+    margin: 50px;
+  }
+}
+
+.card {
+  span {
+    margin-right: 10px;
+    margin-top: 5px;
+    a {
+      font-weight: bolder;
+    }
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .blog {
+    button {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+      width: 100%;
+    }
+  }
+}

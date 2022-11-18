@@ -146,6 +146,25 @@ p {
   cursor: pointer;
 }
 
+.slide-container {
+  text-align: start;
+  max-width: 1220px;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+}
+.slide-container .slide-content {
+  margin: 0 40px;
+}
+.slide-container .slide-content .card {
+  width: 300px;
+  background-color: white;
+  padding: 50px;
+}
+.slide-container .slide-content .card img {
+  margin-bottom: 25px;
+}
+
 .navbar {
   padding: 30px 100px;
   display: flex;
@@ -327,7 +346,7 @@ nav ul li i {
   }
   .hero .hero-btn {
     flex-direction: column;
-    row-gap: 10px;
+    row-gap: 20px;
   }
   .hero .hero-btn .btn-white,
 .hero .hero-btn .btn-primary {
@@ -387,7 +406,7 @@ nav ul li i {
   justify-content: center;
   flex-direction: column;
   background-color: #f1f6fa;
-  padding: 90px 0;
+  padding: 50px 0;
 }
 .advantages .advantage-title {
   padding: 0 1.5rem;
@@ -403,26 +422,6 @@ nav ul li i {
 }
 .advantages .advantage-title p {
   max-width: 500px;
-}
-
-.slide-container {
-  text-align: start;
-  max-width: 1220px;
-  width: 100%;
-  height: 100%;
-  background-color: #f1f6fa;
-  padding: 40px;
-}
-.slide-container .slide-content {
-  margin: 0 40px;
-}
-.slide-container .slide-content .card {
-  width: 300px;
-  background-color: white;
-  padding: 50px;
-}
-.slide-container .slide-content .card img {
-  margin-bottom: 25px;
 }
 
 .feature {
@@ -452,7 +451,7 @@ nav ul li i {
 
 @media only screen and (max-width: 820px) {
   .feature {
-    padding: 50px 1.5rem;
+    padding: 20px 1.5rem;
   }
   .feature .feature1 {
     flex-direction: column-reverse;
@@ -494,5 +493,39 @@ nav ul li i {
   }
   .feature .feature2 .feature2-image img {
     width: 50vh;
+  }
+}
+.blog {
+  padding: 0 1.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f0f9ff;
+  padding: 70px 0;
+}
+.blog .blog-title {
+  padding: 0 1.5rem;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+.blog button {
+  margin: 50px;
+}
+
+.card span {
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.card span a {
+  font-weight: bolder;
+}
+
+@media only screen and (max-width: 820px) {
+  .blog button {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
