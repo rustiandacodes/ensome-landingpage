@@ -1,0 +1,70 @@
+@use '../modules/flexbox' as fb;
+@use '../modules/colors' as colors;
+
+.contact {
+  padding: 100px;
+  background-color: colors.$second-bg;
+  @include fb.flex-box(center);
+  gap: 7%;
+  .contact-address {
+    width: 50%;
+  }
+  .contact-form {
+    width: 50%;
+    .contact-form-container {
+      h2 {
+        margin-bottom: 30px;
+      }
+      width: 90%;
+      padding: 2rem 3rem;
+      background-color: colors.$white;
+      border-radius: 20px;
+      .subject {
+        @include fb.flex-box(flex-start, flex-start);
+        flex-direction: column;
+        margin-bottom: 30px;
+        label {
+          margin-bottom: 10px;
+          font-size: 12px;
+          font-weight: 500;
+          color: colors.$body-text;
+        }
+        input {
+          height: 2.5rem;
+          width: 100%;
+          border: none;
+          border-bottom: 2.5px solid colors.$body-text;
+          font-size: 16px;
+          font-weight: bold;
+          color: colors.$header-text;
+        }
+        input::placeholder {
+          font-size: 16px;
+          font-weight: bold;
+          color: colors.$header-text;
+          opacity: 1;
+        }
+        input:focus {
+          outline: none;
+        }
+      }
+      .form-btn {
+        padding: 30px 0 20px 0;
+        @include fb.flex-box(flex-end);
+      }
+    }
+  }
+}
+
+.address-email,
+.address-phone,
+.address-address {
+  margin: 30px 0;
+}
+.address-email :last-child,
+.address-phone :last-child,
+.address-address :last-child {
+  font-weight: bolder;
+  color: colors.$header-text;
+  margin-top: -10px;
+}

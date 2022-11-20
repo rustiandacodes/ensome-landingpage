@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
 
 // text-style template
-@mixin text-style($size, $lh, $color, $weight: normal) {
+@mixin text-style($size, $lh: 1rem, $color, $weight: normal) {
   color: $color;
   font-size: $size;
   line-height: $lh;
@@ -37,7 +37,7 @@ p {
 }
 
 .p2-bold {
-  @include text-style(16px, 28px, colors.$body-text, bold);
+  @include text-style(16px, 28px, colors.$body-text, bolder);
 }
 
 // text style on phone screen
@@ -60,6 +60,6 @@ p {
   }
 
   .p2-bolder {
-    @include text-style(12px, 24px, colors.$body-text, bold);
+    @include text-style(12px, 24px, colors.$body-text, bolder);
   }
 }

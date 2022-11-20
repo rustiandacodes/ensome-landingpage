@@ -81,7 +81,7 @@ p {
   color: #9497a1;
   font-size: 16px;
   line-height: 28px;
-  font-weight: bold;
+  font-weight: bolder;
   margin-bottom: 15px;
 }
 
@@ -118,7 +118,7 @@ p {
     color: #9497a1;
     font-size: 12px;
     line-height: 24px;
-    font-weight: bold;
+    font-weight: bolder;
     margin-bottom: 15px;
   }
 }
@@ -600,6 +600,12 @@ nav {
     padding: 0.5rem 1rem;
   }
 }
+@media only screen and (max-width: 400px) {
+  .reviews .reviews-header .navigation {
+    margin-right: 25rem;
+    width: 100vh;
+  }
+}
 .company-overview {
   padding: 50px 200px;
   background-color: #185cff;
@@ -637,6 +643,80 @@ nav {
     display: block;
     color: white;
   }
+}
+.contact {
+  padding: 100px;
+  background-color: #f1f6fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7%;
+}
+.contact .contact-address {
+  width: 50%;
+}
+.contact .contact-form {
+  width: 50%;
+}
+.contact .contact-form .contact-form-container {
+  width: 90%;
+  padding: 2rem 3rem;
+  background-color: white;
+  border-radius: 20px;
+}
+.contact .contact-form .contact-form-container h2 {
+  margin-bottom: 30px;
+}
+.contact .contact-form .contact-form-container .subject {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.contact .contact-form .contact-form-container .subject label {
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #9497a1;
+}
+.contact .contact-form .contact-form-container .subject input {
+  height: 2.5rem;
+  width: 100%;
+  border: none;
+  border-bottom: 2.5px solid #9497a1;
+  font-size: 16px;
+  font-weight: bold;
+  color: #292d33;
+}
+.contact .contact-form .contact-form-container .subject input::placeholder {
+  font-size: 16px;
+  font-weight: bold;
+  color: #292d33;
+  opacity: 1;
+}
+.contact .contact-form .contact-form-container .subject input:focus {
+  outline: none;
+}
+.contact .contact-form .contact-form-container .form-btn {
+  padding: 30px 0 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.address-email,
+.address-phone,
+.address-address {
+  margin: 30px 0;
+}
+
+.address-email :last-child,
+.address-phone :last-child,
+.address-address :last-child {
+  font-weight: bolder;
+  color: #292d33;
+  margin-top: -10px;
 }
 
 /*# sourceMappingURL=main.css.map */

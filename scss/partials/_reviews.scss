@@ -66,4 +66,12 @@
 }
 
 @media only screen and (max-width: 400px) {
+  .reviews {
+    .reviews-header {
+      .navigation {
+        margin-right: 25rem;
+        width: 100vh;
+      }
+    }
+  }
 }
