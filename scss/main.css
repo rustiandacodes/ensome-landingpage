@@ -593,10 +593,48 @@ nav ul li i {
     display: flex;
     align-items: center;
     justify-content: end;
-    margin-right: 15rem;
+    margin-right: 20rem;
     width: 100vh;
   }
   .reviews .reviews-header .navigation a {
     padding: 0.5rem 1rem;
+  }
+}
+.company-overview {
+  padding: 50px 200px;
+  background-color: #185cff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.company-overview .overview {
+  padding: 20px 0;
+  text-align: center;
+  width: 200px;
+}
+.company-overview .overview p {
+  color: white;
+  margin: 30px 0;
+  font-weight: bolder;
+}
+.company-overview .overview hr {
+  display: none;
+}
+.company-overview .overview :first-child {
+  font-size: 56px;
+}
+.company-overview .overview :nth-child(2) {
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 820px) {
+  .company-overview {
+    flex-direction: column;
+    padding: 50px 1.5rem;
+  }
+  .company-overview .overview hr {
+    display: block;
+    color: white;
   }
 }/*# sourceMappingURL=main.css.map */

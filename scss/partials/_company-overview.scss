@@ -1,0 +1,42 @@
+@use '../modules/flexbox' as fb;
+@use '../modules/colors' as colors;
+
+.company-overview {
+  padding: 50px 200px;
+  background-color: colors.$primary;
+  @include fb.flex-box(space-between);
+  .overview {
+    padding: 20px 0;
+    text-align: center;
+    width: 200px;
+    p {
+      color: colors.$white;
+      margin: 30px 0;
+      font-weight: bolder;
+    }
+    hr {
+      display: none;
+    }
+  }
+  .overview :first-child {
+    font-size: 56px;
+  }
+
+  .overview :nth-child(2) {
+    margin-top: 30px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .company-overview {
+    flex-direction: column;
+    padding: 50px 1.5rem;
+    .overview {
+      hr {
+        display: block;
+        color: colors.$white;
+      }
+    }
+  }
+}
