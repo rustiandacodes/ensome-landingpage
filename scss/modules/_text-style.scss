@@ -47,6 +47,10 @@ p {
     @include text-style(30px, 40px, colors.$header-text, bolder);
   }
 
+  h4 {
+    @include text-style(18px, 33px, colors.$header-text, bold);
+  }
+
   p {
     @include text-style(14px, 24px, colors.$body-text);
   }

@@ -1,0 +1,69 @@
+@use '../modules/flexbox' as fb;
+@use '../modules/colors' as colors;
+
+.reviews {
+  padding: 100px;
+  .reviews-header {
+    @include fb.flex-box(space-between);
+    .navigation {
+      a {
+        background-color: colors.$second-bg;
+        padding: 1rem 2rem;
+        font-size: 20px;
+        margin-right: 10px;
+        border-radius: 12px;
+        color: colors.$body-text;
+        border: none;
+        cursor: pointer;
+      }
+      a:hover {
+        color: colors.$header-text;
+      }
+    }
+  }
+
+  .slide-reviews {
+    margin: 0 20px;
+    .card {
+      margin: 30px 0;
+      background-color: colors.$white;
+      padding: 0 50px 50px 50px;
+      margin-top: 100px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      img {
+        width: 100px;
+        border-radius: 100px;
+        margin-bottom: 30px;
+        margin-top: -30px;
+      }
+      h4 {
+        margin-top: 30px;
+        line-height: 0.8rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .reviews {
+    padding: 50px 0;
+    .reviews-header {
+      flex-direction: column;
+      row-gap: 30px;
+      text-align: center;
+      padding: 0 1.5rem;
+      .navigation {
+        @include fb.flex-box(end);
+        margin-right: 15rem;
+        // background-color: aqua;
+        width: 100vh;
+        a {
+          padding: 0.5rem 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+}

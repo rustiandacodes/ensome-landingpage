@@ -31,9 +31,7 @@ pages.addEventListener('click', () => {
 // swipper slider
 
 const swiper = new Swiper('.slide-content', {
-  slidesPerView: 3,
-  spaceBetween: 20,
-  slidesPerGroup: 1,
+  spaceBetween: 30,
   loop: false,
   centerSlide: 'true',
   fade: 'true',
@@ -44,8 +42,8 @@ const swiper = new Swiper('.slide-content', {
     dynamicBullets: true,
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.next',
+    prevEl: '.prev',
   },
   breakpoints: {
     0: {
@@ -58,8 +56,32 @@ const swiper = new Swiper('.slide-content', {
       slidesPerView: 3,
     },
   },
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+});
+
+const swiperReviews = new Swiper('.slide-reviews', {
+  spaceBetween: 40,
+  loop: false,
+  centerSlide: 'true',
+  fade: 'true',
+  grapCursor: 'true',
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: '.next',
+    prevEl: '.prev',
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    530: {
+      slidesPerView: 1,
+    },
+    950: {
+      slidesPerView: 2,
+    },
+  },
 });
