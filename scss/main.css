@@ -290,7 +290,7 @@ nav {
     margin: 0 20px;
   }
   nav ul li a,
-  nav ul li i {
+nav ul li i {
     font-size: 20px;
     color: white;
     font-weight: bold;
@@ -358,7 +358,7 @@ nav {
     row-gap: 20px;
   }
   .hero .hero-btn .btn-white,
-  .hero .hero-btn .btn-primary {
+.hero .hero-btn .btn-primary {
     width: 100%;
   }
   .hero .hero-btn .btn-white {
@@ -398,7 +398,7 @@ nav {
     width: 20vh;
   }
   .client-logo :first-child,
-  .client-logo :last-child {
+.client-logo :last-child {
     display: none;
   }
 }
@@ -655,6 +655,9 @@ nav {
 .contact .contact-address {
   width: 50%;
 }
+.contact .contact-address button {
+  display: none;
+}
 .contact .contact-form {
   width: 50%;
 }
@@ -689,6 +692,18 @@ nav {
   font-weight: bold;
   color: #292d33;
 }
+.contact .contact-form .contact-form-container .subject input::-moz-placeholder {
+  font-size: 16px;
+  font-weight: bold;
+  color: #292d33;
+  opacity: 1;
+}
+.contact .contact-form .contact-form-container .subject input:-ms-input-placeholder {
+  font-size: 16px;
+  font-weight: bold;
+  color: #292d33;
+  opacity: 1;
+}
 .contact .contact-form .contact-form-container .subject input::placeholder {
   font-size: 16px;
   font-weight: bold;
@@ -719,4 +734,19 @@ nav {
   margin-top: -10px;
 }
 
-/*# sourceMappingURL=main.css.map */
+@media only screen and (max-width: 820px) {
+  .contact {
+    padding: 60px 2rem;
+  }
+  .contact .contact-address {
+    width: 100%;
+  }
+  .contact .contact-address button {
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .contact .contact-form {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */
