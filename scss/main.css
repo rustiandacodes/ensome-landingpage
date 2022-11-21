@@ -749,4 +749,61 @@ nav ul li i {
   .contact .contact-form {
     display: none;
   }
+}
+.subscribe {
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  background-color: #185cff;
+}
+.subscribe .subscribe-title {
+  width: 50%;
+}
+.subscribe .subscribe-title h2,
+.subscribe .subscribe-title p {
+  color: white;
+}
+.subscribe .subscribe-form {
+  width: 50%;
+  text-align: center;
+}
+.subscribe .subscribe-form input {
+  height: 55px;
+  width: 26vw;
+  border-radius: 8px;
+  background-color: #c9dcec;
+  border: none;
+  font-weight: bolder;
+  padding: 0 20px;
+}
+.subscribe .subscribe-form input::-moz-placeholder {
+  color: #292d33;
+  font-weight: bolder;
+  opacity: 1;
+}
+.subscribe .subscribe-form input:-ms-input-placeholder {
+  color: #292d33;
+  font-weight: bolder;
+  opacity: 1;
+}
+.subscribe .subscribe-form input::placeholder {
+  color: #292d33;
+  font-weight: bolder;
+  opacity: 1;
+}
+.subscribe .subscribe-form input:focus {
+  outline: none;
+}
+.subscribe .subscribe-form button {
+  height: 55px;
+  width: 100px;
+  background-color: white;
+  display: inline;
+  margin-left: -20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bolder;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

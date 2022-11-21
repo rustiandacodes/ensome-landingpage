@@ -1,0 +1,49 @@
+@use '../modules/flexbox' as fb;
+@use '../modules/colors' as colors;
+
+.subscribe {
+  padding: 100px;
+  @include fb.flex-box(center, center);
+  gap: 5%;
+  background-color: colors.$primary;
+  .subscribe-title {
+    width: 50%;
+    h2,
+    p {
+      color: colors.$white;
+    }
+  }
+  .subscribe-form {
+    width: 50%;
+    text-align: center;
+    input {
+      height: 55px;
+      width: 26vw;
+      border-radius: 8px;
+      background-color: colors.$helper-blue;
+      border: none;
+      font-weight: bolder;
+
+      padding: 0 20px;
+    }
+    input::placeholder {
+      color: colors.$header-text;
+      font-weight: bolder;
+      opacity: 1;
+    }
+    input:focus {
+      outline: none;
+    }
+    button {
+      height: 55px;
+      width: 100px;
+      background-color: colors.$white;
+      display: inline;
+      margin-left: -20px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bolder;
+      cursor: pointer;
+    }
+  }
+}
