@@ -1,0 +1,97 @@
+@use '../modules/flexbox' as fb;
+@use '../modules/colors' as colors;
+
+footer {
+  padding: 70px 100px;
+  background-color: colors.$third-bg;
+  .footer-links {
+    @include fb.flex-box(space-between, none);
+    margin-bottom: 20px;
+    .logo {
+      width: 50%;
+    }
+    .links {
+      width: 50%;
+      @include fb.flex-box(space-around, none);
+      ul {
+        .title {
+          font-weight: bolder;
+          font-size: 16px;
+        }
+        li {
+          padding-bottom: 1rem;
+          a {
+            color: colors.$header-text;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .contact-socialMedia {
+    padding: 50px 0;
+    border-top: 2px solid colors.$body-text;
+    border-bottom: 2px solid colors.$body-text;
+    @include fb.flex-box(space-between, none);
+    .header-text {
+      font-weight: bolder;
+    }
+    p {
+      color: colors.$header-text;
+      line-height: 30px;
+    }
+    .footer-contact {
+      width: 50%;
+      .header-text {
+        font-weight: bolder;
+      }
+      p {
+        color: colors.$header-text;
+        line-height: 30px;
+      }
+      .contact-flex {
+        @include fb.flex-box(space-none, none);
+        gap: 50px;
+        p {
+          font-size: 14px;
+        }
+        i {
+          margin-left: 8px;
+        }
+      }
+    }
+    .footer-socmed {
+      p {
+        margin-bottom: 20px;
+      }
+      img {
+        display: inline-block;
+        width: 50px;
+        margin-right: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+  .end-footer {
+    margin: 30px 0;
+    @include fb.flex-box(space-between, none);
+    .links {
+      a {
+        font-size: 14px;
+        font-weight: bold;
+
+        text-decoration: none;
+        color: colors.$body-text;
+        margin-right: 20px;
+        i {
+          margin-left: 8px;
+        }
+      }
+    }
+    .copyright {
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
