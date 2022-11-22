@@ -806,4 +806,48 @@ nav ul li i {
   border-radius: 8px;
   font-weight: bolder;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 820px) {
+  .subscribe {
+    flex-direction: column;
+    padding: 50px 1.5rem;
+  }
+  .subscribe .subscribe-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .subscribe .subscribe-title p {
+    display: none;
+  }
+  .subscribe .subscribe-form {
+    width: 100%;
+    text-align: center;
+  }
+  .subscribe .subscribe-form button {
+    width: 100%;
+    display: block;
+    margin: 15px 0;
+    color: #185cff;
+    font-size: 16px;
+  }
+  .subscribe .subscribe-form input {
+    width: 100%;
+    display: block;
+    margin: 15px 0;
+    font-size: 16px;
+    background-color: #185cff;
+    border: 2.5px solid white;
+    color: white;
+  }
+  .subscribe .subscribe-form input::-moz-placeholder {
+    color: white;
+  }
+  .subscribe .subscribe-form input:-ms-input-placeholder {
+    color: white;
+  }
+  .subscribe .subscribe-form input::placeholder {
+    color: white;
+  }
 }/*# sourceMappingURL=main.css.map */
