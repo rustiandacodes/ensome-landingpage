@@ -945,4 +945,74 @@ footer .end-footer .links a i {
 }
 footer .end-footer .copyright p {
   font-size: 14px;
+}
+
+.footer-responsive {
+  display: none;
+  padding: 40px 1.5rem;
+  background-color: #f0f9ff;
+}
+.footer-responsive .link {
+  border-bottom: 2.5px solid #9497a1;
+  padding: 20px 0;
+}
+.footer-responsive .link-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-responsive .link-title p {
+  color: #292d33;
+  font-weight: bold;
+}
+.footer-responsive ul {
+  padding: 10px 0 30px 0;
+  padding: 0 1rem;
+}
+.footer-responsive ul li {
+  margin-bottom: 20px;
+}
+.footer-responsive ul li a {
+  color: #9497a1;
+}
+.footer-responsive .fr-socmed {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-responsive .fr-socmed p {
+  color: #292d33;
+  font-weight: bold;
+}
+.footer-responsive .fr-socmed img {
+  margin-left: 8px;
+  width: 30px;
+}
+.footer-responsive .privacy-term {
+  border-bottom: 2.5px solid #9497a1;
+  padding-bottom: 20px;
+}
+.footer-responsive .privacy-term a {
+  margin-right: 10px;
+  color: #9497a1;
+}
+.footer-responsive p {
+  margin: 20px 0;
+}
+
+@media only screen and (max-width: 800px) {
+  footer {
+    display: none;
+  }
+  .footer-responsive {
+    display: block;
+  }
+}
+@media only screen and (max-width: 400px) {
+  a {
+    font-size: 14px;
+    line-height: 24px;
+    color: #9497a1;
+  }
 }/*# sourceMappingURL=main.css.map */

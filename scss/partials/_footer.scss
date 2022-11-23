@@ -95,3 +95,71 @@ footer {
     }
   }
 }
+
+.footer-responsive {
+  display: none;
+  padding: 40px 1.5rem;
+  background-color: colors.$third-bg;
+  .link {
+    border-bottom: 2.5px solid colors.$body-text;
+    padding: 20px 0;
+  }
+  .link-title {
+    @include fb.flex-box(space-between);
+    p {
+      color: colors.$header-text;
+      font-weight: bold;
+    }
+  }
+
+  ul {
+    padding: 10px 0 30px 0;
+    padding: 0 1rem;
+    li {
+      margin-bottom: 20px;
+      a {
+        color: colors.$body-text;
+      }
+    }
+  }
+  .fr-socmed {
+    margin: 20px 0;
+    @include fb.flex-box(space-between);
+    p {
+      color: colors.$header-text;
+      font-weight: bold;
+    }
+    img {
+      margin-left: 8px;
+      width: 30px;
+    }
+  }
+  .privacy-term {
+    border-bottom: 2.5px solid colors.$body-text;
+    padding-bottom: 20px;
+    a {
+      margin-right: 10px;
+      color: colors.$body-text;
+    }
+  }
+  p {
+    margin: 20px 0;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  footer {
+    display: none;
+  }
+  .footer-responsive {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  a {
+    font-size: 14px;
+    line-height: 24px;
+    color: colors.$body-text;
+  }
+}
