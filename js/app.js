@@ -1,3 +1,4 @@
+// toggle menu
 const menuToggle = document.querySelector('.burger');
 const menuToggleRemove = document.querySelector('.burger-remove');
 const nav = document.querySelector('#nav-mobile');
@@ -11,25 +12,7 @@ menuToggleRemove.addEventListener('click', () => {
   nav.classList.remove('slide');
 });
 
-const pages = document.querySelector('#pages');
-const pagesContent = document.querySelector('.dropdown-responsive-content');
-
-pages.classList.add('fa-chevron-down');
-
-pages.addEventListener('click', () => {
-  if (pages.classList.contains('fa-chevron-up')) {
-    pages.classList.remove('fa-chevron-up');
-    pages.classList.toggle('fa-chevron-down');
-    pagesContent.style.display = 'none';
-  } else if (pages.classList.contains('fa-chevron-down')) {
-    pages.classList.remove('fa-chevron-down');
-    pages.classList.toggle('fa-chevron-up');
-    pagesContent.style.display = 'block';
-  }
-});
-
 // swipper slider
-
 const swiper = new Swiper('.slide-content', {
   spaceBetween: 30,
   loop: false,
@@ -58,6 +41,7 @@ const swiper = new Swiper('.slide-content', {
   },
 });
 
+// swiper slider sreviews section
 const swiperReviews = new Swiper('.slide-reviews', {
   spaceBetween: 40,
   loop: false,
