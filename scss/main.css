@@ -23,7 +23,7 @@ ul li {
     padding-top: 130px;
   }
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 450px) {
   main {
     padding-top: 130px;
   }
@@ -84,7 +84,7 @@ p {
   margin-bottom: 15px;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   h1 {
     color: #292d33;
     font-size: 30px;
@@ -173,9 +173,7 @@ p {
 
 .navbar {
   padding: 30px 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  background-color: burlywood;
 }
 .navbar ul {
   display: flex;
@@ -371,7 +369,7 @@ nav ul li i {
     width: 70vh;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .hero .hero-image {
     text-align: center;
   }
@@ -401,7 +399,7 @@ nav ul li i {
     display: none;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .client-logo img {
     width: 12vh;
   }
@@ -495,7 +493,7 @@ nav ul li i {
     width: 70vh;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .feature .feature1 .feature1-image img {
     width: 50vh;
   }
@@ -599,7 +597,7 @@ nav ul li i {
     padding: 0.5rem 1rem;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .reviews .reviews-header .navigation {
     margin-right: 25rem;
     width: 100vh;
@@ -1013,7 +1011,7 @@ footer .end-footer .copyright p {
     display: block;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   a {
     font-size: 14px;
     line-height: 24px;
