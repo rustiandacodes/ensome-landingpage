@@ -84,7 +84,7 @@ p {
   margin-bottom: 15px;
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 400px) {
   h1 {
     color: #292d33;
     font-size: 30px;
@@ -371,7 +371,7 @@ nav ul li i {
     width: 70vh;
   }
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 400px) {
   .hero .hero-image {
     text-align: center;
   }
@@ -401,7 +401,7 @@ nav ul li i {
     display: none;
   }
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 400px) {
   .client-logo img {
     width: 12vh;
   }
@@ -495,7 +495,7 @@ nav ul li i {
     width: 70vh;
   }
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 400px) {
   .feature .feature1 .feature1-image img {
     width: 50vh;
   }
@@ -1013,7 +1013,7 @@ footer .end-footer .copyright p {
     display: block;
   }
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 400px) {
   a {
     font-size: 14px;
     line-height: 24px;
