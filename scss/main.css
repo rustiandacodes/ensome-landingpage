@@ -173,7 +173,9 @@ p {
 
 .navbar {
   padding: 30px 100px;
-  background-color: burlywood;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .navbar ul {
   display: flex;

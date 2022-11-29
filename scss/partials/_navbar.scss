@@ -5,7 +5,7 @@
 
 .navbar {
   padding: 30px 100px;
-  background-color: burlywood;
+  @include fb.flex-box(space-between);
   ul {
     @include fb.flex-box;
     gap: 20%;
@@ -156,4 +156,8 @@ nav {
   .slide {
     transform: translateX(0);
   }
+}
+
+// one phone screen
+@media only screen and (max-width: 400px) {
 }
