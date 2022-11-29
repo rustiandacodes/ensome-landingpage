@@ -42,7 +42,7 @@ p {
 
 // text style on phone screen
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 350px) {
   h1 {
     @include text-style(30px, 40px, colors.$header-text, bolder);
   }
