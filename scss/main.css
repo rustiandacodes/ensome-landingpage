@@ -376,7 +376,7 @@ nav ul li i {
     text-align: center;
   }
   .hero .hero-image img {
-    width: 50vh;
+    width: 40vh;
   }
 }
 .client-logo {
@@ -403,7 +403,7 @@ nav ul li i {
 }
 @media only screen and (max-width: 450px) {
   .client-logo img {
-    width: 12vh;
+    width: 10vh;
   }
 }
 .advantages {
@@ -497,10 +497,10 @@ nav ul li i {
 }
 @media only screen and (max-width: 450px) {
   .feature .feature1 .feature1-image img {
-    width: 50vh;
+    width: 40vh;
   }
   .feature .feature2 .feature2-image img {
-    width: 50vh;
+    width: 40vh;
   }
 }
 .blog {
