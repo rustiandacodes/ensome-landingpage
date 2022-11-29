@@ -159,17 +159,14 @@ p {
   height: 100%;
   padding: 40px;
 }
-
 .slide-container .slide-content {
   margin: 0 40px;
 }
-
 .slide-container .slide-content .card {
   width: 300px;
   background-color: white;
   padding: 50px;
 }
-
 .slide-container .slide-content .card img {
   margin-bottom: 25px;
 }
@@ -180,30 +177,25 @@ p {
   align-items: center;
   justify-content: space-between;
 }
-
 .navbar ul {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20%;
 }
-
 .navbar ul li a {
   color: #9497a1;
 }
-
 .navbar ul li a:hover {
   color: #185cff;
   border-bottom: 2.5px solid #185cff;
 }
-
 .navbar ul .dropbtn {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
-
 .navbar ul .dropdown-content {
   display: none;
   position: absolute;
@@ -213,21 +205,17 @@ p {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-
 .navbar ul .dropdown-content a {
   display: block;
   padding: 15px 20px;
 }
-
 .navbar ul .dropdown-content i {
   margin-left: 13px;
 }
-
 .navbar ul .dropdown-content a:hover {
   color: #185cff;
   border: none;
 }
-
 .navbar ul .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -238,7 +226,6 @@ button {
   justify-content: center;
   gap: 10px;
 }
-
 button i {
   font-size: 20px;
 }
@@ -246,7 +233,6 @@ button i {
 .burger {
   display: none;
 }
-
 .burger .hamburger-inner,
 .burger .hamburger-inner::before,
 .burger .hamburger-inner::after {
@@ -351,7 +337,6 @@ nav {
   justify-content: center;
   gap: 20px;
 }
-
 .hero .hero-btn {
   display: flex;
   align-items: center;
@@ -431,7 +416,6 @@ nav {
   background-color: #f1f6fa;
   padding: 70px 0;
 }
-
 .advantages .advantage-title {
   padding: 0 1.5rem;
   padding-bottom: 30px;
@@ -441,11 +425,9 @@ nav {
   flex-direction: column;
   margin-bottom: 20px;
 }
-
 .advantages .advantage-title h1 {
   max-width: 400px;
 }
-
 .advantages .advantage-title p {
   max-width: 500px;
 }
@@ -453,7 +435,6 @@ nav {
 .feature {
   margin: 50px 0;
 }
-
 .feature .feature1 {
   margin-left: 100px;
   display: flex;
@@ -462,7 +443,6 @@ nav {
   gap: 20px;
   margin-bottom: 30px;
 }
-
 .feature .feature2 {
   margin-right: 100px;
   display: flex;
@@ -470,11 +450,9 @@ nav {
   justify-content: center;
   gap: 20px;
 }
-
 .feature .feature2 .feature2-content {
   margin-left: 50px;
 }
-
 .feature .btn-primary {
   margin-top: 30px;
 }
@@ -534,13 +512,11 @@ nav {
   background-color: #f0f9ff;
   padding: 70px 0;
 }
-
 .blog .blog-title {
   padding: 0 1.5rem;
   padding-bottom: 30px;
   margin-bottom: 20px;
 }
-
 .blog button {
   margin-top: 70px;
 }
@@ -549,7 +525,6 @@ nav {
   margin-right: 10px;
   margin-top: 5px;
 }
-
 .card span a {
   text-decoration: none;
   color: #185cff;
@@ -564,13 +539,11 @@ nav {
 .reviews {
   padding: 100px;
 }
-
 .reviews .reviews-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .reviews .reviews-header .navigation a {
   background-color: #f1f6fa;
   padding: 1rem 2rem;
@@ -581,15 +554,12 @@ nav {
   border: none;
   cursor: pointer;
 }
-
 .reviews .reviews-header .navigation a:hover {
   color: #292d33;
 }
-
 .reviews .slide-reviews {
   margin: 0 20px;
 }
-
 .reviews .slide-reviews .card {
   margin: 30px 0;
   background-color: white;
@@ -597,14 +567,12 @@ nav {
   margin-top: 100px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
 .reviews .slide-reviews .card img {
   width: 100px;
   border-radius: 100px;
   margin-bottom: 30px;
   margin-top: -30px;
 }
-
 .reviews .slide-reviews .card h4 {
   margin-top: 30px;
   line-height: 0.8rem;
@@ -644,27 +612,22 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
-
 .company-overview .overview {
   padding: 20px 0;
   text-align: center;
   width: 200px;
 }
-
 .company-overview .overview p {
   color: white;
   margin: 30px 0;
   font-weight: bolder;
 }
-
 .company-overview .overview hr {
   display: none;
 }
-
 .company-overview .overview :first-child {
   font-size: 56px;
 }
-
 .company-overview .overview :nth-child(2) {
   margin-top: 30px;
   font-size: 16px;
@@ -688,30 +651,24 @@ nav {
   justify-content: center;
   gap: 7%;
 }
-
 .contact .contact-address {
   width: 50%;
 }
-
 .contact .contact-address button {
   display: none;
 }
-
 .contact .contact-form {
   width: 50%;
 }
-
 .contact .contact-form .contact-form-container {
   width: 90%;
   padding: 2rem 3rem;
   background-color: white;
   border-radius: 20px;
 }
-
 .contact .contact-form .contact-form-container h2 {
   margin-bottom: 30px;
 }
-
 .contact .contact-form .contact-form-container .subject {
   display: flex;
   align-items: flex-start;
@@ -719,14 +676,12 @@ nav {
   flex-direction: column;
   margin-bottom: 30px;
 }
-
 .contact .contact-form .contact-form-container .subject label {
   margin-bottom: 10px;
   font-size: 12px;
   font-weight: 500;
   color: #9497a1;
 }
-
 .contact .contact-form .contact-form-container .subject input {
   height: 2.5rem;
   width: 100%;
@@ -736,32 +691,15 @@ nav {
   font-weight: bold;
   color: #292d33;
 }
-
-.contact .contact-form .contact-form-container .subject input::-moz-placeholder {
-  font-size: 16px;
-  font-weight: bold;
-  color: #292d33;
-  opacity: 1;
-}
-
-.contact .contact-form .contact-form-container .subject input:-ms-input-placeholder {
-  font-size: 16px;
-  font-weight: bold;
-  color: #292d33;
-  opacity: 1;
-}
-
 .contact .contact-form .contact-form-container .subject input::placeholder {
   font-size: 16px;
   font-weight: bold;
   color: #292d33;
   opacity: 1;
 }
-
 .contact .contact-form .contact-form-container .subject input:focus {
   outline: none;
 }
-
 .contact .contact-form .contact-form-container .form-btn {
   padding: 30px 0 20px 0;
   display: flex;
@@ -807,21 +745,17 @@ nav {
   gap: 5%;
   background-color: #185cff;
 }
-
 .subscribe .subscribe-title {
   width: 50%;
 }
-
 .subscribe .subscribe-title h2,
 .subscribe .subscribe-title p {
   color: white;
 }
-
 .subscribe .subscribe-form {
   width: 50%;
   text-align: center;
 }
-
 .subscribe .subscribe-form input {
   height: 55px;
   width: 26vw;
@@ -831,29 +765,14 @@ nav {
   font-weight: bolder;
   padding: 0 20px;
 }
-
-.subscribe .subscribe-form input::-moz-placeholder {
-  color: #292d33;
-  font-weight: bolder;
-  opacity: 1;
-}
-
-.subscribe .subscribe-form input:-ms-input-placeholder {
-  color: #292d33;
-  font-weight: bolder;
-  opacity: 1;
-}
-
 .subscribe .subscribe-form input::placeholder {
   color: #292d33;
   font-weight: bolder;
   opacity: 1;
 }
-
 .subscribe .subscribe-form input:focus {
   outline: none;
 }
-
 .subscribe .subscribe-form button {
   height: 55px;
   width: 100px;
@@ -900,12 +819,6 @@ nav {
     border: 2.5px solid white;
     color: white;
   }
-  .subscribe .subscribe-form input::-moz-placeholder {
-    color: white;
-  }
-  .subscribe .subscribe-form input:-ms-input-placeholder {
-    color: white;
-  }
   .subscribe .subscribe-form input::placeholder {
     color: white;
   }
@@ -914,39 +827,32 @@ footer {
   padding: 70px 100px;
   background-color: #f0f9ff;
 }
-
 footer .footer-links {
   display: flex;
   align-items: none;
   justify-content: space-between;
   margin-bottom: 20px;
 }
-
 footer .footer-links .logo {
   width: 50%;
 }
-
 footer .footer-links .links {
   width: 50%;
   display: flex;
   align-items: none;
   justify-content: space-around;
 }
-
 footer .footer-links .links ul .title {
   font-weight: bolder;
   font-size: 16px;
 }
-
 footer .footer-links .links ul li {
   padding-bottom: 1rem;
 }
-
 footer .footer-links .links ul li a {
   color: #292d33;
   font-size: 14px;
 }
-
 footer .contact-socialMedia {
   padding: 50px 0;
   border-top: 2px solid #9497a1;
@@ -955,62 +861,50 @@ footer .contact-socialMedia {
   align-items: none;
   justify-content: space-between;
 }
-
 footer .contact-socialMedia .header-text {
   font-weight: bolder;
 }
-
 footer .contact-socialMedia p {
   color: #292d33;
   line-height: 30px;
 }
-
 footer .contact-socialMedia .footer-contact {
   width: 50%;
 }
-
 footer .contact-socialMedia .footer-contact .header-text {
   font-weight: bolder;
 }
-
 footer .contact-socialMedia .footer-contact p {
   color: #292d33;
   line-height: 30px;
 }
-
 footer .contact-socialMedia .footer-contact .contact-flex {
   display: flex;
   align-items: none;
   justify-content: space-none;
   gap: 50px;
 }
-
 footer .contact-socialMedia .footer-contact .contact-flex p {
   font-size: 14px;
 }
-
 footer .contact-socialMedia .footer-contact .contact-flex i {
   margin-left: 8px;
 }
-
 footer .contact-socialMedia .footer-socmed p {
   margin-bottom: 20px;
 }
-
 footer .contact-socialMedia .footer-socmed img {
   display: inline-block;
   width: 50px;
   margin-right: 20px;
   cursor: pointer;
 }
-
 footer .end-footer {
   margin: 30px 0;
   display: flex;
   align-items: none;
   justify-content: space-between;
 }
-
 footer .end-footer .links a {
   font-size: 14px;
   font-weight: bold;
@@ -1018,11 +912,9 @@ footer .end-footer .links a {
   color: #9497a1;
   margin-right: 20px;
 }
-
 footer .end-footer .links a i {
   margin-left: 8px;
 }
-
 footer .end-footer .copyright p {
   font-size: 14px;
 }
@@ -1032,65 +924,57 @@ footer .end-footer .copyright p {
   padding: 40px 1.5rem;
   background-color: #f0f9ff;
 }
-
 .footer-responsive .link {
   border-bottom: 2.5px solid #9497a1;
   padding: 20px 0;
 }
-
 .footer-responsive .link-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .footer-responsive .link-title p {
   color: #292d33;
   font-weight: bold;
 }
-
 .footer-responsive ul {
   padding: 10px 0 30px 0;
   padding: 0 1rem;
 }
-
 .footer-responsive ul li {
   margin-bottom: 20px;
 }
-
 .footer-responsive ul li a {
   color: #9497a1;
 }
-
 .footer-responsive .fr-socmed {
   margin: 20px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .footer-responsive .fr-socmed p {
   color: #292d33;
   font-weight: bold;
 }
-
 .footer-responsive .fr-socmed img {
   margin-left: 8px;
   width: 30px;
 }
-
 .footer-responsive .privacy-term {
   border-bottom: 2.5px solid #9497a1;
   padding-bottom: 20px;
 }
-
 .footer-responsive .privacy-term a {
   margin-right: 10px;
   color: #9497a1;
 }
-
 .footer-responsive p {
   margin: 20px 0;
+}
+
+.footer-responsive :last-child {
+  font-size: 16px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -1107,6 +991,6 @@ footer .end-footer .copyright p {
     line-height: 24px;
     color: #9497a1;
   }
-} /*# sourceMappingURL=main.css.map */
+}
 
 /*# sourceMappingURL=main.css.map */
